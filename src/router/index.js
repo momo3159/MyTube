@@ -5,7 +5,11 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
-    // ここにHOMEのルート
+    {
+      path: "/",
+      name: "Home",
+      component: Home
+    },
     {
       path: "/stampStore",
       name: "StampStore",
@@ -17,6 +21,12 @@ export default new Router({
       name: "PointStore",
       component: () => 
         import("../views/PointStore.vue")
+    },
+    {
+      path: "login",
+      name: "Login",
+      component: () => 
+        import("../views/Login.vue")
     }
   ]
 })
