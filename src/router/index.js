@@ -1,15 +1,22 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
+    // ここにHOMEのルート
     {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      path: "/stampStore",
+      name: "StampStore",
+      component: () =>
+        import("../views/StampStore.vue")
+    },
+    {
+      path: "/pointStore",
+      name: "PointStore",
+      component: () => 
+        import("../views/PointStore.vue")
     }
   ]
 })
