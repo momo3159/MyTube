@@ -1,11 +1,15 @@
 <template>
     <div class="pointStore">
-        <!-- 商品（＝ポイント）一覧の表示 -->
-        <div v-for="point in points" v-bind:key="point">
-            <PointChoice :point="point"></PointChoice>
+        <h1>ポイントストア</h1>
+        <div class="list">
+            <div v-for="point in points" v-bind:key="point.price" class="item">
+                <img v-bind:src="point.imgPath">
+                <PointChoice :point="point.price"></PointChoice>
+            </div>
         </div>
     </div>
 </template>
+
 
 <script>
 import PointChoice from "../components/PointChoice";
