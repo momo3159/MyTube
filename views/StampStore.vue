@@ -61,5 +61,28 @@ export default {
 </script>
 
 <style scoped>
-    /* TODO: スタンプの表示の仕方を整える*/
+    .list {
+        display: flex;
+        flex-wrap: wrap;  
+    }
+    .list:after {
+        content: "";
+        display: block;
+        width: 300px;
+    }
+    .stamp-list {
+        flex: 0 1 300px;
+        margin-bottom: 30px;
+        margin-top: 60px;
+    }
+    img {
+        width: 70%;
+        height: 200px;
+    }
+    h1 {
+        margin-top: 100px;
+    }
+    .buy-btn {
+        margin-left: 15px;
+    }
 </style>
