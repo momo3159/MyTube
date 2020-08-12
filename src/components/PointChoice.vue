@@ -1,8 +1,9 @@
 <template>
-    <div>
-        {{point}}ポイント
+    <div class="item">
+        <div class="price">{{point}}ポイント</div>
         <!-- TODO: v-onで購入処理を追加 -->
-        <input type="button" value="購入">
+        <br>
+        <input type="button" value="購入" v-on:click="buyPoint(point)" class="buyPointBtn">
     </div>
 </template>
 
@@ -14,6 +15,19 @@ export default {
     },
     methods: {
         // TODO: ボタンクリック時のイベントを追加
+        buyPoint: (point) => {
+            console.log(`${point}Ptを購入しました`);
+        }
     }
 }
 </script>
+
+<style scped>
+    .price{
+        font-size: 30px;
+    }
+    .item {
+        margin: 50px;
+        display: inline-block;
+    }
+</style>
