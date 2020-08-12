@@ -14,7 +14,11 @@ export default {
     name: "PointStore",
     data: () => {
         return {
-            points: [100, 1000, 5000] // ポイント（価格）の種類
+            points: [
+                {price: 100, imgPath: require("../assets/coin_little.png")},
+                {price: 1000, imgPath: require("../assets/coin_silver.png")},
+                {price: 5000, imgPath: require("../assets/coin_gold.png")}
+            ]
         };
     },
     components: {
