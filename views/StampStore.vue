@@ -2,17 +2,25 @@
     <div class="stampStore">
         <h1>スタンプストア</h1>
         <!-- 検索 title, authorで判定すれば良い-->
+        <input v-model="search" placeholder="キーワード">
         <!-- TODO: ポイントが足りない時の処理 -->
         <!-- ポイントはサーバーから取得（？） -->
-        <div class="stamp" v-for="stamp in stamps" v-bind:key="stamp.title">
-            <img v-bind:src="stamp.image">
-            <div class="author">{{stamp.author}}</div>
-            <div class="title">{{stamp.title}}</div>
-            <div class="price">{{stamp.point}}</div>
-            <input type="button" value="購入する" v-on:click="buy(stamp)">
-        </div>    
+        <br>
+        <div class="list">
+            <div class="stamp-list" v-for="stamp in filtered(search)" v-bind:key="stamp.title">
+                <div class="stamp">
+                    <img v-bind:src="stamp.image">
+                    <div class="author">{{stamp.title}}</div>
+                    <div class="title">created by {{stamp.author}}</div>
+                    <br>
+                    <div class="price">
+                        {{stamp.point}} Pt
+                        <input type="button" class="buy-btn" value="購入する" v-on:click="buy(stamp)">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    
 </template>
 
 <script>
@@ -31,6 +39,15 @@ export default {
                 {author: "bar", title: "花見シリーズ", point: 100, image: require("../assets/ukareru_man.png")},
                 {author: "bar", title: "Vue.js", point: 100, image: require("../assets/logo.png")}
             ]
+        }
+    },
+    computed: {
+        filtered: function() {
+            return function(search) {
+                return this.stamps.filter((stamp) => {
+                    return search === undefined || stamp.author.includes(search) || stamp.title.includes(search);
+                })
+            }
         }
     },
     methods: {
