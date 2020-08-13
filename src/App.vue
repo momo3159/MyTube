@@ -19,7 +19,7 @@
 
       <div id="coment" class="coment-box">
         <div class="coment">
-          <Coment />
+
         </div>
         <div class="stamp-box">
           <button class="stamp">スタンプ購入</button>
