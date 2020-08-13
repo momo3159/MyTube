@@ -1,6 +1,6 @@
 <template>
     <div>
-        {{point}}ポイント
+        {{ point }}ポイント
         <!-- TODO: v-onで購入処理を追加 -->
         <input type="button" value="購入">
     </div>

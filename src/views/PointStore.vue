@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import PointChoice from '../components/PointChoice'
+import PointChoice from '../components/PointChoice.vue'
 
 export default {
   name: 'PointStore',

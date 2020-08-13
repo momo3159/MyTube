@@ -7,20 +7,26 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Home',
-      component: 'Home'
+      name: 'home',
+      component: 'homePage'
     },
     {
-      path: '/StampStore',
-      name: 'StampStore'
+      path: '/stampStore',
+      name: 'StampStore',
+      component: () =>
+        import('../views/StampStore.vue')
     },
     {
-      path: '/PointStore',
-      name: 'PointStore'
+      path: '/pointStore',
+      name: 'PointStore',
+      component: () =>
+        import('../views/PointStore.vue')
     },
     {
-      path: '/Login',
-      name: 'Login'
+      path: 'login',
+      name: 'Login',
+      component: () =>
+        import('../views/Login.vue')
     }
   ]
 })
