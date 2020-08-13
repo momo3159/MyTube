@@ -6,27 +6,27 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: "/",
-      name: "Home",
-      component: Home
+      path: '/',
+      name: 'home',
+      component: 'homePage'
     },
     {
-      path: "/stampStore",
-      name: "StampStore",
+      path: '/stampStore',
+      name: 'StampStore',
       component: () =>
-        import("../views/StampStore.vue")
+        import('../views/StampStore.vue')
     },
     {
-      path: "/pointStore",
-      name: "PointStore",
-      component: () => 
-        import("../views/PointStore.vue")
+      path: '/pointStore',
+      name: 'PointStore',
+      component: () =>
+        import('../views/PointStore.vue')
     },
     {
-      path: "login",
-      name: "Login",
-      component: () => 
-        import("../views/Login.vue")
+      path: 'login',
+      name: 'Login',
+      component: () =>
+        import('../views/Login.vue')
     }
   ]
 })
