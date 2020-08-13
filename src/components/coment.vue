@@ -7,10 +7,10 @@
 
 <script>
 export default {
-  data (){
+  data () {
     return {
-      name: "名無し",
-      coment: "Hello World"
+      name: '名無し',
+      coment: 'Hello World'
     }
   }
 }
