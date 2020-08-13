@@ -8,12 +8,12 @@
 
 <script>
 export default {
-    name: "PointChoice",
-    props: {
-        point: Number
-    },
-    methods: {
-        // TODO: ボタンクリック時のイベントを追加
-    }
+  name: 'PointChoice',
+  props: {
+    point: Number
+  },
+  methods: {
+    // TODO: ボタンクリック時のイベントを追加
+  }
 }
 </script>

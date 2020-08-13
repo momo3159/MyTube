@@ -10,7 +10,6 @@
           <router-link to="/StampStore">スタンプ</router-link> |
           <router-link to="/PointStore">ポイント</router-link> |
           <router-link to="/Login">ログイン</router-link>
-          <a href="">aaa</a>
         </div>
       </div>
     </header>
