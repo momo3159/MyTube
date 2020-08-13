@@ -11,21 +11,21 @@ export default new Router({
       component: Home
     },
     {
-      path: "/stampStore",
+      path: "/StampStore",
       name: "StampStore",
       component: () =>
         import("../views/StampStore.vue")
     },
     {
-      path: "/pointStore",
+      path: "/PointStore",
       name: "PointStore",
-      component: () => 
+      component: () =>
         import("../views/PointStore.vue")
     },
     {
-      path: "login",
+      path: "/Login",
       name: "Login",
-      component: () => 
+      component: () =>
         import("../views/Login.vue")
     }
   ]

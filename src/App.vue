@@ -7,9 +7,10 @@
         </div>
         <div class="header-right">
           <router-link to="/">ホーム</router-link> |
-          <router-link to="/StampStore">スタンプ</router-link> | 
+          <router-link to="/StampStore">スタンプ</router-link> |
           <router-link to="/PointStore">ポイント</router-link> |
-          <router-link to="/login">ログイン</router-link>
+          <router-link to="/Login">ログイン</router-link>
+          <a href="">aaa</a>
         </div>
       </div>
     </header>
