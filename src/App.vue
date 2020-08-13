@@ -23,6 +23,7 @@
         </button>
       </form>
     </div>
+   </div>
 
     <div class="youtube-box">
       <div class="video-box">
