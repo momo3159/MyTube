@@ -13,36 +13,9 @@
         </div>
       </div>
     </header>
-
-  <div class="main">
-    <div class="search-box">
-      <form action="">
-        <input type="url" class="search" placeholder="URL検索">
-        <button type="submit" class="submit-button">
-          <font-awesome-icon icon="search" class="search-icon"/>
-        </button>
-      </form>
-    </div>
-
-    <div class="youtube-box">
-      <div class="video-box">
-        <div class="video">
-
-        </div>
-        <h1>タイトル</h1>
-      </div>
-
-      <div id="coment" class="coment-box">
-        <div class="coment">
-
-        </div>
-        <div class="stamp-box">
-          <button class="stamp">スタンプ購入</button>
-        </div>
-      </div>
-    </div>
+    <!-- ここにホーム画面、スタンプ購入画面、ポイント購入画面を入れ替えながら表示-->
+    <router-view />
   </div>
-  <router-view />
 </template>
 
 <script>
