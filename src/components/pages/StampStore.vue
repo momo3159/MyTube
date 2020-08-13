@@ -63,7 +63,7 @@ export default {
 <style scoped>
     .list {
         display: flex;
-        flex-wrap: wrap;  
+        flex-wrap: wrap;
     }
     .list:after {
         content: "";
