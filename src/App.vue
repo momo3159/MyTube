@@ -10,6 +10,7 @@
           <router-link to="/StampStore">スタンプ</router-link> |
           <router-link to="/PointStore">ポイント</router-link> |
           <router-link to="/Login">ログイン</router-link>
+          <div id="userId" v-show="isLogin()">{{showIdInHeader()}}</div>
         </div>
       </div>
     </header>
@@ -24,6 +25,17 @@ import Coment from './components/coment.vue'
 export default {
   components: {
     Coment
+  },
+  methods: {
+      isLogin(){
+        return this.$store.getters.isLogin;
+      },
+      getId(){
+        return this.$store.getters.getId;
+      },
+      showIdInHeader(){
+        return `userID: ${this.getId()}でログイン中`;
+      }
   }
 }
 </script>
