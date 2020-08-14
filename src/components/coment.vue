@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="coment-body">
     <p>{{ name }}</p>
     <p>{{ coment }}</p>
   </div>
@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style>
-body{
+.coment-body{
   color: #fff;
 }
 </style>
