@@ -6,6 +6,9 @@ import router from './router'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import Axios from 'axios'
+
+Vue.use(Axios)
 
 library.add(fas)
 
