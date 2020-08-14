@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import homePage from "../views/homePage.vue";
 
 Vue.use(Router)
 
@@ -8,7 +9,7 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: 'homePage'
+      component: homePage
     },
     {
       path: '/stampStore',
